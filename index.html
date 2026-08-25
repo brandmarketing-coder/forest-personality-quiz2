@@ -21,11 +21,11 @@
 <title>森林人格測驗｜你的頭皮，是哪一種森林？</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="forest_rain.png?v=20260824">
-<link rel="preload" as="image" href="forest_conifer.png?v=20260824">
-<link rel="preload" as="image" href="forest_mixed.png?v=20260824">
-<link rel="preload" as="image" href="forest_decid.png?v=20260824">
-<link rel="preload" as="image" href="forest_fog.png?v=20260824">
+<link rel="preload" as="image" href="images/forest_rain.png?v=20260824">
+<link rel="preload" as="image" href="images/forest_conifer.png?v=20260824">
+<link rel="preload" as="image" href="images/forest_mixed.png?v=20260824">
+<link rel="preload" as="image" href="images/forest_decid.png?v=20260824">
+<link rel="preload" as="image" href="images/forest_fog.png?v=20260824">
 <style>
   :root{
     --cream: #F7F4EC;
@@ -298,7 +298,7 @@
     position:absolute;
     left:76%; top:22%;
     width:7%; height:42%;
-    background-image:url('result_frame.png');
+    background-image:url('images/result_frame.png');
     background-position:8% 4%;
     background-size:900% 170%;
     background-repeat:no-repeat;
@@ -572,7 +572,7 @@
   <!-- ============ INTRO SCREEN ============ -->
   <section class="screen active" id="screen-intro">
     <div class="hero-media">
-      <img src="hero.jpg" alt="森林人格測驗主視覺">
+      <img src="images/hero.jpg" alt="森林人格測驗主視覺">
       <div class="leaf-particles" id="leafParticles"></div>
       <div class="hero-copy">
         <span class="eyebrow-pill">O'right 森林人格測驗</span>
@@ -645,29 +645,29 @@
         <div class="result-kicker">森林人格測驗結果</div>
         <p class="result-h0" id="resGreeting">你的森林角色</p>
         <div class="result-forest-frame">
-          <img class="result-frame-art" src="result_frame.png" alt="" loading="eager" fetchpriority="high">
+          <img class="result-frame-art" src="images/result_frame.png" alt="" loading="eager" fetchpriority="high">
           <span class="frame-line-cover" aria-hidden="true"></span>
           <span class="frame-leaf-patch" aria-hidden="true"></span>
           <h1 class="result-h1" id="resName">熱帶雨林</h1>
         </div>
       </div>
       <a class="result-portrait" href="https://page.line.me/yhz1055p" target="_blank" rel="noopener">
-        <img id="resImg" src="forest_rain.png?v=20260824" alt="森林角色插畫" loading="eager" decoding="async" fetchpriority="high">
+        <img id="resImg" src="images/forest_rain.png?v=20260824" alt="森林角色插畫" loading="eager" decoding="async" fetchpriority="high">
       </a>
       <p class="portrait-cta">點擊圖片領好禮</p>
       <div class="gift-row">
         <div class="gift-item">
-          <div class="gift-photo"><img src="gift_checkup.png" alt="專業頭皮健康檢測券"></div>
+          <div class="gift-photo"><img src="images/gift_checkup.png" alt="專業頭皮健康檢測券"></div>
           <span>專業頭皮<br>健康檢測券</span>
         </div>
         <div class="gift-plus">+</div>
         <div class="gift-item">
-          <div class="gift-photo"><img src="gift_sample.png" alt="養護體驗品"></div>
+          <div class="gift-photo"><img src="images/gift_sample.png" alt="養護體驗品"></div>
           <span>光漾髮香精華<br>體驗瓶</span>
         </div>
         <div class="gift-plus">+</div>
         <div class="gift-item">
-          <div class="gift-photo"><img src="gift_coupon.png" alt="產品抵用券"></div>
+          <div class="gift-photo"><img src="images/gift_coupon.png" alt="產品抵用券"></div>
           <span>產品抵用券<br>300元</span>
         </div>
       </div>
@@ -722,7 +722,7 @@
         <div class="featured-badge">本季主打・適用各種頭皮</div>
         <div class="featured-inner">
           <div class="featured-icon has-photo">
-            <img src="featured_caffeine_melanin_tonic.png" alt="咖啡因麥拉寧養髮液">
+            <img src="images/featured_caffeine_melanin_tonic.png" alt="咖啡因麥拉寧養髮液">
           </div>
           <div class="featured-body">
             <div class="featured-name">咖啡因麥拉寧養髮液</div>
@@ -772,7 +772,7 @@
 /* ============ DATA：5 種森林結果內容（含描述、分析、對應產品） ============ */
 const FOREST_TYPES = {
   rain: {
-    name: '熱帶雨林', sub: '油頭型', tag: '油脂旺盛，髮型容易扁塌', img: 'forest_rain.png?v=20260824',
+    name: '熱帶雨林', sub: '油頭型', tag: '油脂旺盛，髮型容易扁塌', img: 'images/forest_rain.png?v=20260824',
     desc: '你就像一座充滿生命力的熱帶雨林，能量旺盛，適應力強，但也容易因過度滋養而繁茂失衡。',
     quote: '先別急著出門，讓頭皮也有喘息的空間。',
     analysis: [
@@ -795,7 +795,7 @@ const FOREST_TYPES = {
     nightCare: ['歐萊德男士發根胜肽養護液','專為油脂偏多、清爽需求型頭皮設計，維持頭皮清爽與舒適狀態，草本柑橘香調。','https://www.oright.inc/products_green/4','peptide_him'],
   },
   conifer: {
-    name: '溫帶針葉林', sub: '乾燥型', tag: '乾燥，油脂不足', img: 'forest_conifer.png?v=20260824',
+    name: '溫帶針葉林', sub: '乾燥型', tag: '乾燥，油脂不足', img: 'images/forest_conifer.png?v=20260824',
     desc: '你就像堅韌挺立的針葉林，總是屹立不搖，卻也因環境乾燥而容易緊繃、缺水，需要更多滋潤守護。',
     quote: '乾燥不是個性，只是缺了一點滋潤。',
     analysis: [
@@ -818,7 +818,7 @@ const FOREST_TYPES = {
     nightCare: ['歐萊德女士發根胜肽養護液','針對乾燥、屑感與頭皮問題，提供淨屑舒癢呵護，柔和花香調。','https://www.oright.inc/products_green/4','peptide_her'],
   },
   mixed: {
-    name: '溫帶混合林', sub: '混合型', tag: '忽乾忽油，油水不均', img: 'forest_mixed.png?v=20260824',
+    name: '溫帶混合林', sub: '混合型', tag: '忽乾忽油，油水不均', img: 'images/forest_mixed.png?v=20260824',
     desc: '你就像四季分明的混合林，兼具針葉與闊葉的特質，頭皮容易出現局部出油、局部乾燥的混合狀態，需要因地制宜的呵護。',
     quote: '忽油忽乾也沒關係，找到平衡點就好。',
     analysis: [
@@ -841,7 +841,7 @@ const FOREST_TYPES = {
     nightCare: ['歐萊德男士發根胜肽養護液','針對油膩、干燥、屑感引起的不穩定狀態，維持頭皮平衡，草本柑橘香調。','https://www.oright.inc/products_green/4','peptide_him'],
   },
   decid: {
-    name: '溫帶落葉林', sub: '落髮型', tag: '季節交替，毛囊脆弱', img: 'forest_decid.png?v=20260824',
+    name: '溫帶落葉林', sub: '落髮型', tag: '季節交替，毛囊脆弱', img: 'images/forest_decid.png?v=20260824',
     desc: '你就像隨季節更迭而落葉的森林，頭皮與髮絲容易隨壓力與環境產生周期性變化，容易感受到落髮增加、髮絲纖細的困擾。',
     quote: '掉的是壓力，留下的才是你自己。',
     analysis: [
@@ -864,7 +864,7 @@ const FOREST_TYPES = {
     nightCare: ['歐萊德經典發根養護液','專為生活壓力下的頭皮護理設計，舒緩放鬆、穩定頭皮狀態，柔和薰衣草木質調。','https://www.oright.inc/products_green/4','peptide_classic'],
   },
   fog: {
-    name: '溫帶雨林', sub: '敏感型', tag: '發癢刺痛，敏感脆弱', img: 'forest_fog.png?v=20260824',
+    name: '溫帶雨林', sub: '敏感型', tag: '發癢刺痛，敏感脆弱', img: 'images/forest_fog.png?v=20260824',
     desc: '你就像終年籠罩雲霧的溫帶雨林，濕潤的環境孕育豐富生態，卻也讓頭皮容易受到刺激，出現泛紅、發癢等敏感反應。',
     quote: '敏感不是脆弱，只是更誠實地說出感受。',
     analysis: [
@@ -890,23 +890,23 @@ const FOREST_TYPES = {
 
 /* 產品圖片路徑對照表：key 對應 FOREST_TYPES.products / nightCare 陣列中的第 6 個欄位 */
 const PRODUCT_IMAGES = {
-  zeroc_spray: 'product_zeroc_spray.png',
-  sicily_conditioner: 'product_sicily_conditioner.png',
-  coffee_conditioner: 'product_coffee_conditioner.png',
-  peptide_her: 'product_peptide_her.png',
-  cooling_spray: 'product_cooling_spray.png',
-  caffeine_tonic_plain: 'product_caffeine_tonic_plain.png',
-  coffee_shampoo: 'product_coffee_shampoo.png',
-  peptide_classic: 'product_peptide_classic.png',
-  dandelion_shampoo: 'product_dandelion_shampoo.png',
-  caffeine_melanin_tonic: 'product_caffeine_melanin_tonic.png',
-  wildrose_oil: 'product_wildrose_oil.png',
-  moringa_shampoo: 'product_moringa_shampoo.png',
-  peptide_him: 'product_peptide_him.png',
-  bamboo_conditioner: 'product_bamboo_conditioner.png',
-  teatree_shampoo: 'product_teatree_shampoo.png',
-  teatree_spray: 'product_teatree_spray.png',
-  bamboo_shampoo: 'product_bamboo_shampoo.png',
+  zeroc_spray: 'images/product_zeroc_spray.png',
+  sicily_conditioner: 'images/product_sicily_conditioner.png',
+  coffee_conditioner: 'images/product_coffee_conditioner.png',
+  peptide_her: 'images/product_peptide_her.png',
+  cooling_spray: 'images/product_cooling_spray.png',
+  caffeine_tonic_plain: 'images/product_caffeine_tonic_plain.png',
+  coffee_shampoo: 'images/product_coffee_shampoo.png',
+  peptide_classic: 'images/product_peptide_classic.png',
+  dandelion_shampoo: 'images/product_dandelion_shampoo.png',
+  caffeine_melanin_tonic: 'images/product_caffeine_melanin_tonic.png',
+  wildrose_oil: 'images/product_wildrose_oil.png',
+  moringa_shampoo: 'images/product_moringa_shampoo.png',
+  peptide_him: 'images/product_peptide_him.png',
+  bamboo_conditioner: 'images/product_bamboo_conditioner.png',
+  teatree_shampoo: 'images/product_teatree_shampoo.png',
+  teatree_spray: 'images/product_teatree_spray.png',
+  bamboo_shampoo: 'images/product_bamboo_shampoo.png',
 };
 
 /* 頭皮狀態分析卡＆產品卡使用的內嵌 SVG 圖示 */
@@ -1363,11 +1363,11 @@ async function captureResultImage(){
   canvas.height = 1350;
   const ctx = canvas.getContext('2d');
   const [frame, portrait, giftCheckup, giftSample, giftCoupon] = await Promise.all([
-    loadCanvasImage('result_frame.png'),
+    loadCanvasImage('images/result_frame.png'),
     loadCanvasImage(data.img),
-    loadCanvasImage('gift_checkup.png'),
-    loadCanvasImage('gift_sample.png'),
-    loadCanvasImage('gift_coupon.png')
+    loadCanvasImage('images/gift_checkup.png'),
+    loadCanvasImage('images/gift_sample.png'),
+    loadCanvasImage('images/gift_coupon.png')
   ]);
 
   const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
